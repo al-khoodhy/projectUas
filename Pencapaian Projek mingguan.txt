@@ -1,0 +1,8 @@
+Kelompok 4 :
+- Tri sumiati
+- Risma
+- Ilham
+- Abdurrahman
+
+Pengerjaan tugas projek Sistem informasi pembayaran SPP setiap minggu :
+1. Membuat database Login dan tampilan login

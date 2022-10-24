@@ -1,0 +1,10 @@
+Database Login 
+- Nama databases = sisteminfomasi
+- nama tabel = login
+- antribut = id((100)primary key), username(varchar(12)), password(varchar(100))
+
+
+Database siswa
+-
+-
+-

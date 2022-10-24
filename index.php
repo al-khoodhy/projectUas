@@ -35,13 +35,15 @@ if(isset($_POST['login'])){
     <div class="overlay"></div>
     <form action="" method="post" class="box">
         <div class="header">
-            <h4>Login ke Pembayaran SPP</h4>
-            <p>Halaman login pembayaran SPP SMK </p>
+            <img src="/img/logo-garuda.jpg" alt="logo">
+            <h1>User Login</h1>
         </div>
         <div class="login-area">
             <input type="text" name="username" class="username" placeholder="Username">
             <input type="password" name="password" class="password" placeholder="Password">
-            <input type="submit" name="login" value="Login" class="submit"> 
+            <input type="checkbox" name="checkbox" id="checkbox" class="checkbox"><label for="checkbox" class="label">Remember me</label>
+            <a href="#">Forget password?</a>
+            <input type="submit" name="login" value="Login" class="submit">
             
         </div>
     </form>

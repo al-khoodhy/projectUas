@@ -1,0 +1,522 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: "Georgia", Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar {
+    background: linear-gradient(to right, #1054ad, #246ece, #559efd, #0e50a5);
+    height: 50px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+label.logo {
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    padding: 0 25px;
+    font-weight: bold;
+
+}
+
+nav .kotak-keluar {
+    float: right;
+    margin-right: 20px;
+}
+
+nav .kotak-keluar li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
+nav .kotak-keluar li a {
+    color: aliceblue;
+    font-size: 14px;
+    padding: 3px 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.kotak-keluar a.active,
+.kotak-keluar a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+/* pengaturan tampilan pada sidebar */
+
+nav.sidebar {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    background: rgb(5, 49, 105);
+    margin-top: 50px;
+    padding: 0;
+    float: left;
+    z-index: 50;
+
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.sidebar ul li {
+    text-align: center;
+    line-height: 50px;
+    border-top: 1px solid rgb(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+
+}
+
+.sidebar ul li a {
+    color: aliceblue;
+}
+
+.tombol {
+    border: none;
+    color: wheat;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sidebar ul div {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: aliceblue;
+}
+
+
+
+.sidebar img {
+    width: 55%;
+    border-radius: 60px;
+    border: 1px solid rgb(4, 24, 80);
+    object-fit:cover;
+    height: 130px;
+}
+
+.sidebar ul li:hover {
+    background: rgb(8, 59, 126);
+    ;
+    color: bisque;
+}
+
+.bg-content {
+    width: 30%;
+    margin: 80px 0 0 580px;
+    padding: 0;
+    opacity: 30%;
+    position: absolute;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    margin: 50px 50px 0 250px;
+    padding: 10px 20px 20px 0;
+    z-index: 10;
+}
+
+.content h2 {
+    border-bottom: 1px solid black;
+}
+
+.content p {
+    padding: 8px 4px 80px 8px;
+    background: linear-gradient(to right, #0e4d9e, #1e5daf, #2e73cc, #0e50a5);
+    opacity: 80%;
+    color: aliceblue;
+    line-height: 22px;
+    margin-top: 20px;
+    opacity: 80%;
+}
+
+/* membuat clear pada float */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* CSS untuk Halaman Pengumuman */
+
+
+.notiv {
+    margin: 20px 20px 0 250px;
+    padding: 0px 0px 20px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.notiv div {
+    color: aliceblue;
+    margin: 0px;
+    border: 1px solid lightblue;
+    background: linear-gradient(to right, #0e4d9e, #1e5daf, #2e73cc, #0e50a5);
+    border-radius: 10px 10px 0 0;
+    font-size: 18px;
+    padding: 5px 0 0 6px;
+}
+
+.notiv li {
+    padding: 10px 0 5px 15px;
+
+}
+
+.box-bayar {
+    margin: 20px 20px 0 0;
+    padding: 0px 0px 20px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.bayar-box {
+    margin: 30px 20px 0 250px;
+    padding: 0px 0px 20px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.box-bayar div {
+    color: aliceblue;
+    margin: 0px;
+    border: 1px solid lightblue;
+    background: linear-gradient(to right, #0e4d9e, #1e5daf, #2e73cc, #0e50a5);
+    border-radius: 10px 10px 0 0;
+    font-size: 18px;
+    padding: 5px 0 0 6px;
+}
+
+.box-bayar table {
+    padding: 5px 0 0 6px;
+}
+
+div .box-bayar table td {
+    padding: 4px 15px 4px 4px;
+}
+
+.judul-bayar {
+    color: black;
+    margin: 10px 0 0 250px;
+}
+
+.box-wrap-content {
+    position: absolute;
+    z-index: 10;
+    overflow-y: auto;
+    margin: 65px 0 0 250px;
+    background-color: linear-gradient(to right, #0e4d9e, #1e5daf, #2e73cc, #0e50a5);
+}
+
+.box-wrap-content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.payment-attr {
+    border-collapse: collapse;
+
+}
+
+
+.rapi {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.spp-table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(240, 232, 232);
+    opacity: 90%;
+    margin-top: 20px;
+}
+
+.spp-table td,
+.custumers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+
+.spp-table input[type=text],
+input[type=date] {
+    width: 100%;
+    text-align: center;
+}
+
+.spp-table img {
+    margin-left: 50px;
+    width: 50px;
+}
+
+/* .spp-table tr:nth-child(even){
+    background-color: rgb(87, 95, 173);
+} */
+
+.spp-table tr:hover {
+    background-color: rgba(247, 242, 242, 0.918);
+
+}
+
+.spp-table th {
+    padding: 12px;
+    text-align: left;
+    background: #1e5daf;
+    color: white;
+    text-align: center;
+}
+
+.spp-table img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.input-siswa input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+
+.input-siswa input[type=file] {
+    float: block;
+}
+
+.input-siswa input[type=date] {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 15px;
+}
+
+.input-siswa button {
+    padding: 8px;
+    width: 100%;
+
+}
+
+.space {
+    padding-right: 40px;
+    float: left;
+}
+
+
+.ftombol {
+    padding: 5px;
+    width:fit-content;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.background-form {
+    /* background: linear-gradient(to right, #0e4d9e, #1e5daf, #2e73cc, #0e50a5); */
+    opacity: 90%;
+    border-style: groove;
+    padding: 4px 10px 10px 4px;
+    margin-right: 80px;
+}
+
+.box-spp{
+    position: absolute;
+    width: auto;
+    height: 200px;
+    top: 180px;
+    left: 530px;
+    z-index: 100;
+    background:#b7d4fa;
+    border: 2px solid rgb(62, 62, 230);
+    border-radius: 20px;
+}
+
+.rata-tebal{
+    text-align: center;
+    font-size: large;
+    padding: 10px 20px 15px 20px ;
+    box-sizing: border-box;
+}
+
+.box-spp input[type=submit]{
+    margin-top: 10%;
+    width: 100px;
+}
+
+.selection-box {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 20px;
+    float: left;
+    width: 325px;
+    height: 185px;
+    background-color: #559efd;
+}
+
+
+
+.selection-box p {
+    margin-top: 8px;
+    color: whitesmoke;
+}
+
+/* GROUP ICON */
+.i-icon {
+    background-image: url(i-icon.png);
+    background-size: contain;
+    width: 80px;
+    height: 75px;
+    display: inline-block;
+}
+
+.i-siswa-icon {
+    background-image: url(i-siswa-icon.png);
+    width: 60px;
+    height: 60px;
+    margin-top: 12px;
+    padding-bottom: 4px;
+    background-size: contain;
+    display: inline-block;
+}
+
+.val-icon {
+    background-image: url(val-icon.png);
+    width: 65px;
+    height: 65px;
+    margin-top: 8px;
+    background-size: contain;
+    display: inline-block;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.col-peg-aktif {
+    width: 25px;
+    height: 25px;
+    background-color: #559efd;
+    padding-right: 5px;
+    padding-right: 5px;
+    display: inline;
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.col-peg {
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+    display: inline;
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+
+.num-peg{
+    color: black;
+
+
+  }
+
+.l-peg {
+    float: left;
+}
+
+.r-peg {
+    float: left;
+}
+
+.list{
+    border-left: 5px solid #559efd;
+    padding: 20px 0 20px 4px;
+    margin-top: 8px;
+    background: #dfecfc;
+    transition: .5s;
+}
+
+.list:hover {
+    background: #a4caf8;
+    
+}
+
+.baris{
+    display: block;
+    padding-bottom:8px ;
+    padding-top: 8px;
+}
+
+.fjudul{
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 650px;
+}
+
+.box-pengumuman{
+    background-color: #559efd;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    display: none;
+}
+
+.p-rata{
+    padding: 2px 4px;
+    margin-left: 15px;
+}
+
+.margin-top{
+    margin-top: 10px ;
+}
